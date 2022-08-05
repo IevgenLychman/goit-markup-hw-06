@@ -24,18 +24,19 @@
       <div class="container nav">
         <nav class="nav">
           <a class="web-studio top" href="./index.html">
-            Web<span class="studio">Studio</span>
+            Web
+            <span class="studio">Studio</span>
           </a>
           <ul class="nav-list">
             <li class="item">
-              <a class="nav-link current transition" href="./index.html"
-                >Студія</a
-              >
+              <a class="nav-link current transition" href="./index.html">
+                Студія
+              </a>
             </li>
             <li class="item">
-              <a class="nav-link transition" href="./portfolio.html"
-                >Портфоліо</a
-              >
+              <a class="nav-link transition" href="./portfolio.html">
+                Портфоліо
+              </a>
             </li>
             <li class="item">
               <a class="nav-link transition" href="./contacts.html">Контакти</a>
@@ -48,16 +49,16 @@
               <svg class="contact-icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelope "></use>
               </svg>
-              info@devstudio.com</a
-            >
+              info@devstudio.com
+            </a>
           </li>
           <li class="contact-list">
             <a class="tel text transition" href="tel:+380961111111">
               <svg class="contact-icon" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
-              +38 096 111 11 11</a
-            >
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
@@ -81,28 +82,19 @@
                 </svg>
               </button>
 
-              <form class="form">
+              <form class="contact-form">
                 <h2>Залиште свої дані, ми вам передзвонимо</h2>
                 <div class="user-id">
-                  <label class="user-data" for="user_name">Ім'я</label>
-                  <input
-                    class="input"
-                    type="user_name"
-                    name="name"
-                    id="user_name"
-                  />
+                  <label for="user_name">Ім'я</label>
+                  <input class="input" type="name" name="name" id="user_name" />
+                </div>
+
+                <div class="user-id">
+                  <label for="user_tel">Телефон</label>
+                  <input class="input" type="tel" name="tel" id="user_tel" />
                 </div>
                 <div class="user-id">
-                  <label class="user-data" for="user_tel">Password</label>
-                  <input
-                    class="input"
-                    type="user_tel"
-                    name="tel"
-                    id="user_tel"
-                  />
-                </div>
-                <div class="user-id">
-                  <label class="user-data" for="user_email">Пошта</label>
+                  <label for="user_email">Пошта</label>
                   <input
                     class="input"
                     type="email"
@@ -111,19 +103,26 @@
                   />
                 </div>
                 <div class="user-id">
-                  <label class="user-data feedback" for="user_feedback"
-                    >Коментар</label
-                  >
+                  <label for="user_feedback">Коментар</label>
                   <textarea
                     class="input"
                     type="feedback"
                     name="feedback"
                     id="user_feedback"
                     rows="5"
-                    placeholder="Type your message here..."
+                    placeholder="Введіть текст"
                   ></textarea>
                 </div>
-                <button type="submit">Submit</button>
+                <div class="user-policy">
+                  <label for="privacy_policy">
+                    Погоджуюся з розсилкою та приймаю
+                    <a class="policy-link transition" href="">Умови договору</a>
+                  </label>
+                  <input type="checkbox" name="privacy_policy" value="music" />
+                </div>
+                <button class="btn-send transition" type="button">
+                  Відправити
+                </button>
               </form>
             </div>
           </div>
@@ -546,7 +545,8 @@
       <div class="container contacts">
         <div>
           <a class="web-studio down" href="./index.html">
-            Web<span class="studio-footer">Studio</span>
+            Web
+            <span class="studio-footer">Studio</span>
           </a>
           <address class="address">
             <ul class="address-list">
@@ -555,13 +555,14 @@
                 <a
                   class="address-contacts transition"
                   href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
                 >
+                  info@devstudio.com
+                </a>
               </li>
               <li class="address-text desc">
-                <a class="address-contacts transition" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+                <a class="address-contacts transition" href="tel:+380961111111">
+                  +38 096 111 11 11
+                </a>
               </li>
             </ul>
           </address>
