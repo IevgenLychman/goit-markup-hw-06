@@ -321,6 +321,10 @@ img {
   margin-bottom: 4px;
 }
 
+.user-id.feedback {
+  margin-bottom: 20px;
+}
+
 .user-id textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -379,7 +383,7 @@ img {
 
 .user-policy {
   display: block;
-  margin-top: 20px;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -411,7 +415,6 @@ img {
   cursor: pointer;
 
   padding: 10px 52px;
-  margin-top: 30px;
 
   transition-property: background-color;
 }
