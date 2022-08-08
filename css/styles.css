@@ -269,6 +269,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding: 40px;
 }
 
 .close-btn {
@@ -286,8 +287,13 @@ img {
   padding: 0;
 }
 
-.contact-form {
-  padding: 40px;
+.close-icon {
+  fill: #000000;
+}
+
+.close-btn:hover > .close-icon,
+.close-btn:focus > .close-icon {
+  fill: var(--hover-color);
 }
 
 .contact-form h2 {
@@ -314,19 +320,8 @@ img {
 .user-id label {
   margin-bottom: 4px;
 }
-.user-id input {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  height: 40px;
-
-  font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
 
 .user-id textarea {
-  margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
@@ -346,15 +341,45 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.user-policy {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  margin-top: 20px;
+.user-wrap {
+  position: relative;
 }
 
-.user-policy label {
-  margin-left: 8px;
+.input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  width: 100%;
+  padding-left: 40px;
+
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  outline: transparent;
+}
+
+.icon-form {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  fill: var(--primary-text-color);
+}
+
+.input:hover,
+.input:focus {
+  border-color: var(--hover-color);
+}
+
+.input:hover + .icon-form,
+.input:focus + .icon-form {
+  fill: var(--hover-color);
+}
+
+.user-policy {
+  display: block;
+  margin-top: 20px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -385,8 +410,8 @@ img {
   border: none;
   cursor: pointer;
 
-  margin-top: 30px;
   padding: 10px 52px;
+  margin-top: 30px;
 
   transition-property: background-color;
 }
@@ -412,10 +437,6 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.close-icon {
-  color: var(--primary-text-color);
 }
 
 .description-list {
