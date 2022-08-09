@@ -27,6 +27,7 @@ ul {
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--background-color);
+  overflow: auto;
 }
 
 img {
@@ -265,6 +266,7 @@ img {
   transition-delay: 250ms;
 
   width: 528px;
+  height: auto;
   background: var(--background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -289,6 +291,7 @@ img {
 
 .close-icon {
   fill: #000000;
+  transition-property: fill;
 }
 
 .close-btn:hover > .close-icon,
@@ -354,21 +357,23 @@ img {
   border-radius: 4px;
   height: 40px;
   width: 100%;
-  padding-left: 40px;
+  padding-left: 42px;
 
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   outline: transparent;
+  transition-property: border-color;
 }
 
 .icon-form {
   position: absolute;
   top: 50%;
-  left: 16px;
+  left: 12px;
   transform: translateY(-50%);
   fill: var(--primary-text-color);
+  transition-property: fill;
 }
 
 .input:hover,
@@ -382,12 +387,14 @@ img {
 }
 
 .user-policy {
-  display: block;
+  display: flex;
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  justify-content: center;
+  align-items: center;
 }
 
 .policy-link {
@@ -400,6 +407,31 @@ img {
 .policy-link:hover,
 .policy-link:focus {
   color: #188ce8;
+}
+
+.checkbox {
+  /* position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  bottom: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden; */
+}
+
+.checkbox:checked + .icon-checkbox {
+  overflow: hidden;
+}
+
+.icon-checkbox {
+  display: flex;
+  margin-right: 8px;
+}
+
+.icon-checkbox: {
+}
+.icon-checkbox-accept {
 }
 
 .btn-send {

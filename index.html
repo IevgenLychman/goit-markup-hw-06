@@ -76,7 +76,11 @@
 
           <div class="backdrop-hero is-hidden" data-modal>
             <div class="modal-hero">
-              <button class="close-btn" type="button" data-modal-close>
+              <button
+                class="close-btn transition"
+                type="button"
+                data-modal-close
+              >
                 <svg class="close-icon" width="11" height="11">
                   <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
@@ -86,25 +90,30 @@
                 <h2>Залиште свої дані, ми вам передзвонимо</h2>
 
                 <div class="user-id">
-                  <label for="user_tel">Пошта</label>
+                  <label for="user_name">Ім'я</label>
                   <div class="user-wrap">
                     <input
-                      class="input"
+                      class="input transition"
                       type="name"
                       name="name"
                       id="user_name"
                     />
-                    <svg class="icon-form" width="15" height="12">
+                    <svg class="icon-form transition" width="18" height="18">
                       <use href="./images/symbol-defs.svg#icon-name"></use>
                     </svg>
                   </div>
                 </div>
 
                 <div class="user-id">
-                  <label for="user_tel">Пошта</label>
+                  <label for="user_tel">Телефон</label>
                   <div class="user-wrap">
-                    <input class="input" type="tel" name="tel" id="user_tel" />
-                    <svg class="icon-form" width="15" height="12">
+                    <input
+                      class="input transition"
+                      type="tel"
+                      name="tel"
+                      id="user_tel"
+                    />
+                    <svg class="icon-form transition" width="18" height="18">
                       <use href="./images/symbol-defs.svg#icon-tel"></use>
                     </svg>
                   </div>
@@ -114,12 +123,12 @@
                   <label for="user_email">Пошта</label>
                   <div class="user-wrap">
                     <input
-                      class="input"
+                      class="input transition"
                       type="email"
                       name="email"
                       id="user_email"
                     />
-                    <svg class="icon-form" width="15" height="12">
+                    <svg class="icon-form transition" width="18" height="18">
                       <use href="./images/symbol-defs.svg#icon-email"></use>
                     </svg>
                   </div>
@@ -128,7 +137,7 @@
                 <div class="user-id feedback">
                   <label for="user_feedback">Коментар</label>
                   <textarea
-                    class="input"
+                    class="input transition"
                     type="feedback"
                     name="feedback"
                     id="user_feedback"
@@ -139,12 +148,27 @@
 
                 <label class="user-policy">
                   <input
+                    class="checkbox"
                     type="checkbox"
                     name="privacy_policy"
-                    value="Погоджуюся з розсилкою та приймаю Умови договору"
+                    value="accept"
                   />
-                  Погоджуюся з розсилкою та приймаю
-                  <a class="policy-link transition" href="">Умови договору</a>
+                  <div class="icon-checkbox">
+                    <svg class="icon-checkbox" width="16" height="15">
+                      <use
+                        href="./images/symbol-defs.svg#icon-check-check-1"
+                      ></use>
+                    </svg>
+                    <svg class="icon-checkbox-accept" width="16" height="15">
+                      <use
+                        href="./images/symbol-defs.svg#icon-check-check-2"
+                      ></use>
+                    </svg>
+                  </div>
+                  <span>
+                    Погоджуюся з розсилкою та приймаю
+                    <a class="policy-link transition" href="">Умови договору</a>
+                  </span>
                 </label>
 
                 <button class="btn-send transition" type="submit">
