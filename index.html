@@ -87,8 +87,7 @@
               </button>
 
               <form class="contact-form">
-                <h2>Залиште свої дані, ми вам передзвонимо</h2>
-
+                <strong>Залиште свої дані, ми вам передзвонимо</strong>
                 <div class="user-id">
                   <label for="user_name">Ім'я</label>
                   <div class="user-wrap">
@@ -651,6 +650,29 @@
             </li>
           </ul>
         </div>
+        <form class="sing-up-form">
+          <strong>Підпишіться на розсилку</strong>
+          <div class="sing-up-wrap">
+            <label for="sing_up"></label>
+            <input
+              class="sing-up"
+              type="sing-up"
+              name="sing-up"
+              id="sing_up"
+              placeholder="E-mail"
+            />
+
+            <button class="btn-sing-up transition" type="submit">
+              Підписатися
+              <svg width="24" height="24">
+                <use
+                  class="sing-up-icon"
+                  href="./images/symbol-defs.svg#icon-send"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>

@@ -299,7 +299,8 @@ img {
   fill: var(--hover-color);
 }
 
-.contact-form h2 {
+.contact-form strong {
+  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -409,16 +410,16 @@ img {
   color: #188ce8;
 }
 
-.checkbox {
-  /* position: absolute;
+/* .checkbox {
+ position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
   bottom: 0;
-  padding: 0;
+  padding: 0; 
   clip: rect(0 0 0 0);
-  overflow: hidden; */
-}
+  overflow: hidden;
+} */
 
 .checkbox:checked + .icon-checkbox {
   overflow: hidden;
@@ -429,10 +430,10 @@ img {
   margin-right: 8px;
 }
 
-.icon-checkbox: {
+/* .icon-checkbox: {
 }
 .icon-checkbox-accept {
-}
+} */
 
 .btn-send {
   font-family: inherit;
@@ -732,6 +733,7 @@ img {
 .contacts {
   display: flex;
   align-items: baseline;
+  justify-content: space-around;
 }
 
 .down {
@@ -779,7 +781,7 @@ img {
 }
 
 .footer-social {
-  margin-left: 45px;
+  margin-left: 70px;
 }
 
 .footer-social-text {
@@ -819,6 +821,73 @@ img {
 .footer-social-link:focus {
   background-color: var(--hover-color);
 }
+
+.sing-up-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 93px;
+}
+
+.sing-up-wrap {
+  display: flex;
+  align-items: flex-end;
+}
+
+.sing-up-form > strong {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--background-color);
+}
+
+.sing-up {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--footer-background);
+  padding-left: 16px;
+  margin-top: 20px;
+  margin-right: 12px;
+}
+
+.sing-up::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-sing-up {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--hover-color);
+  color: var(--background-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  height: 50px;
+  width: 200px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: none;
+  cursor: pointer;
+  padding: 10px 28px;
+
+  transition-property: background-color;
+}
+
+.btn-send:hover,
+.btn-send:focus {
+  background-color: #188ce8;
+}
+
 /*--------PORTFOLIO-------*/
 
 .section.filters {
