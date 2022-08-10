@@ -27,7 +27,6 @@ ul {
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--background-color);
-  overflow: auto;
 }
 
 img {
@@ -410,30 +409,32 @@ img {
   color: #188ce8;
 }
 
-/* .checkbox {
- position: absolute;
+.checkbox {
+  position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
   bottom: 0;
-  padding: 0; 
+  padding: 0;
   clip: rect(0 0 0 0);
-  overflow: hidden;
-} */
-
-.checkbox:checked + .icon-checkbox {
   overflow: hidden;
 }
 
 .icon-checkbox {
-  display: flex;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
   margin-right: 8px;
 }
 
-/* .icon-checkbox: {
+.checkbox:checked + .icon-checkbox {
+  border-color: transparent;
+  background-image: url(../images/symbol-defs.svg#icon-check);
+  background-color: var(--hover-color);
+  background-size: contain;
+  background-origin: border-box;
 }
-.icon-checkbox-accept {
-} */
 
 .btn-send {
   font-family: inherit;
@@ -570,19 +571,6 @@ img {
   text-transform: uppercase;
   color: var(--background-color);
   background-color: rgba(47, 48, 58, 0.8);
-
-  /* position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 27px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--background-color);
-  background-color: rgba(47, 48, 58, 0.8); */
 }
 
 .team {
@@ -852,6 +840,18 @@ img {
   padding-left: 16px;
   margin-top: 20px;
   margin-right: 12px;
+  outline: transparent;
+  transition-property: border-color;
+
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.sing-up:hover,
+.sing-up:focus {
+  border-color: var(--hover-color);
 }
 
 .sing-up::placeholder {
@@ -881,6 +881,10 @@ img {
   padding: 10px 28px;
 
   transition-property: background-color;
+}
+
+.sing-up-icon {
+  fill: var(--background-color);
 }
 
 .btn-send:hover,
