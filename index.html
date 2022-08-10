@@ -93,7 +93,7 @@
                   <div class="user-wrap">
                     <input
                       class="input transition"
-                      type="name"
+                      type="text"
                       name="name"
                       id="user_name"
                     />
@@ -137,7 +137,6 @@
                   <label for="user_feedback">Коментар</label>
                   <textarea
                     class="input transition"
-                    type="feedback"
                     name="feedback"
                     id="user_feedback"
                     rows="5"
@@ -147,12 +146,16 @@
 
                 <label class="user-policy">
                   <input
-                    class="checkbox"
+                    class="checkbox visually-hidden"
                     type="checkbox"
                     name="privacy_policy"
                     value="accept"
                   />
-                  <span class="icon-checkbox"></span>
+                  <span class="icon-checkbox transition">
+                    <svg class="icon-check" width="18" height="18">
+                      <use href="./images/symbol-defs.svg#icon-check"></use>
+                    </svg>
+                  </span>
                   <span>
                     Погоджуюся з розсилкою та приймаю
                     <a class="policy-link transition" href="">Умови договору</a>
@@ -645,7 +648,7 @@
             <label for="sing_up"></label>
             <input
               class="sing-up transition"
-              type="sing-up"
+              type="email"
               name="sing-up"
               id="sing_up"
               placeholder="E-mail"
